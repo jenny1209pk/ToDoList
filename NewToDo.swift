@@ -21,8 +21,10 @@ struct NewToDo: View {
             Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
                 Text("Is it important?")
             }
-            Button("Save") {
+            Button {
                 /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            } label: {
+                Text("Save")
             }
         }
         .padding()
